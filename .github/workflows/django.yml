@@ -2,9 +2,9 @@ name: DjangoCI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -15,16 +15,16 @@ jobs:
       matrix:
         python-version: [3.6, 3.7, 3.8]
     env:
-      DATABASE_URL: "postgis://wastd:wastd@localhost/wastd"
+      DATABASE_URL: "postgis://tsc:tsc@localhost/tsc"
       COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
 
     steps:
     - name: Setup PostgreSQL
       uses: huaxk/postgis-action@v1.0.0
       with:
-        postgresql db: wastd
-        postgresql user: wastd
-        postgresql password: wastd
+        postgresql db: tsc
+        postgresql user: tsc
+        postgresql password: tsc
 
     - name: Install system dependencies
       run: |
