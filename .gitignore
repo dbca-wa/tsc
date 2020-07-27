@@ -1,0 +1,94 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+# Basics
+*.py[cod]
+__pycache__
+
+# Logs
+*.log
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.coverage\.*
+.tox
+nosetests.xml
+htmlcov
+
+# Translations
+*.mo
+*.pot
+
+# Pycharm
+.idea/*
+
+
+# Vim
+
+*~
+*.swp
+*.swo
+
+# npm
+node_modules/
+
+# Compass
+.sass-cache
+
+# virtual environments
+.env
+
+# User-uploaded media
+wastd/media/
+media/
+
+# Hitch directory
+tests/.hitch
+
+# Staticfiles
+staticfiles/
+
+# Sphix docs
+docs/_build/
+
+# coveralls settings
+.coveralls.yml
+
+# web server configs
+config/wastd_uwsgi.ini
+config/wastd.conf
+
+# ingested data
+data/
+
+# iPython
+docs/.ipynb_checkpoints/
+
+# local admin scripts
+dbperf
+.Rproj.user
+*.Rproj
+.Rhistory
+
+
+# temp test fixtures
+taxonomy/fixtures/test_tax_*

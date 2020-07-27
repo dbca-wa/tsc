@@ -1,0 +1,20 @@
+{% extends 'popup/encounter.html' %}
+{% with original as o %}
+
+{% block title %}
+{{ o }}
+{% endblock %}
+
+{% block encounterdetails %}
+<!-- Logger overview -->
+<div class="row"><i class="fa fa-fw fa-tablet"></i>
+    {{ o.get_deployment_status_display }}
+</div>
+{% if o.comments %}
+<div class="row"><i class="fa fa-fw fa-comment-o"></i>
+    {{ o.comments }}
+</div>
+{% endif %}
+{% endblock %}
+
+{% endwith %}
