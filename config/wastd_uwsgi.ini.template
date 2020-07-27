@@ -2,18 +2,18 @@
 
 [uwsgi]
 ## Django-related settings
-chdir           = /home/CORPORATEICT/florianm/projects/wastd/
+chdir           = /home/CORPORATEICT/florianm/projects/tsc/
 
-# CHANGEME path to wastd virtualenv
-home            = /home/CORPORATEICT/florianm/.virtualenvs/wastd/
+# CHANGEME path to tsc virtualenv
+home            = /home/CORPORATEICT/florianm/.virtualenvs/tsc/
 module          = config.wsgi:application
-#env = DJANGO_SETTINGS_MODULE=config.settings.production                                            
+#env = DJANGO_SETTINGS_MODULE=config.settings.production
 
 ## Process-related settings
 auto-procname   = true
 hook-pre-app    = exec:venv/bin/python manage.py collectstatic --clear --noinput -l
 static-map      = /static=%(chdir)staticfiles
-static-map      = /media=%(chdir)wastd/media
+static-map      = /media=%(chdir)tsc/media
 static-cache-paths = 30
 static-safe     = %(chdir)
 die-on-term     = true

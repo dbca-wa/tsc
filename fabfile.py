@@ -100,13 +100,15 @@ def test():
     local('coveralls')
     print(green("Completed running tests and reporting test coverage."))
 
+
 def ptest():
     """Run parallel test suite without coverage."""
     print(yellow("Running parallel tests..."))
     local('python manage.py test --settings=config.settings.test '
-            '--parallel 4 --keepdb -v 2 ',
+          '--parallel 4 --keepdb -v 2 ',
           shell='/bin/bash')
     print(green("Completed running tests."))
+
 
 def doc():
     """Compile docs, draw data models and transitions."""
@@ -114,17 +116,20 @@ def doc():
           "cd docs_source && make clean && "
           "make singlehtml && cd ..")
 
+
 def dbuild():
     """Build Docker image."""
-    ver = confyenv("WASTD_RELEASE", default="0.1.0")
+    ver = confyenv("TSC_RELEASE", default="0.1.0")
     print(yellow("Building docker images with tag latest and {0}...".format(ver)))
     local("rm logs/*.log && touch logs/tsc.log")
     local("docker build -t dbcawa/tsc -t dbcawa/tsc:{0} .".format(ver))
+
 
 def dpush():
     """Push Docker image to Dockerhub. Requires `docker login`."""
     print(yellow("Pushing docker images to DockerHub..."))
     local("docker push dbcawa/tsc")
+
 
 def docker():
     """Build and push docker images."""
@@ -135,12 +140,14 @@ def docker():
         "Updated Docker images are available on DockerHub "
         "as dbcawa/tsc:latest and dbcawa/tsc:{0}".format(ver)))
 
+
 def tag():
     """Tag code with TSC_RELEASE and push to GitHub."""
     ver = confyenv("TSC_RELEASE", default="0.1.0")
     local("git tag -a {0} -m 'Version {0}'".format(ver))
     local("git push origin {0}".format(ver))
     print(green("Code tagged as {0} and pushed to GitHub.".format(ver)))
+
 
 def release():
     """Make release: doc, tag, docker."""

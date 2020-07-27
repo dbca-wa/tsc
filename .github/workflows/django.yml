@@ -48,7 +48,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements/base.txt
-        mkdir logs && touch logs/wastd.log
+        mkdir logs && touch logs/tsc.log
 
     - name: Run parallel tests and skip test coverage
       run: fab ptest
+
+    # - name: Build documentation
+    # - uses: ammaraskar/sphinx-action@master
+    #     with:
+    #       docs-folder: "docs_source/"

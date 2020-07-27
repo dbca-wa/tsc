@@ -18,7 +18,7 @@ from unipath import Path
 # import confy
 # confy.read_environment_file()
 
-ROOT_DIR = environ.Path(__file__) - 3  # (wastd/config/settings/common.py - 3 = wastd/)
+ROOT_DIR = environ.Path(__file__) - 3  # (tsc/config/settings/common.py - 3 = tsc/)
 BASE_DIR = Path(__file__).ancestor(3)
 APPS_DIR = ROOT_DIR.path('wastd')
 
@@ -762,11 +762,11 @@ LOGGING = {
             'handlers': ['console', 'sentry'],
             'propagate': True,
         },
-        'wastd': {
-            'level': 'DEBUG',
-            'handlers': ['console', 'sentry'],
-            'propagate': True,
-        },
+        # 'wastd': {
+        #     'level': 'DEBUG',
+        #     'handlers': ['console', 'sentry'],
+        #     'propagate': True,
+        # },
         'taxonomy': {
             'level': 'DEBUG',
             'handlers': ['console', 'sentry'],
@@ -791,13 +791,14 @@ GRAPPELLI_INDEX_DASHBOARD = 'shared.dashboard.AdminDashboard'
 # GRAPPELLI_ADMIN_TITLE = "Data Curation Portal"
 
 # Error reporting
-WASTD_RELEASE = env("WASTD_RELEASE", default="master")
+
+TSC_RELEASE = env("TSC_RELEASE", default="master")
 if env('SENTRY_DSN', False):
     # RAVEN_CONFIG = {'dsn': env('SENTRY_DSN')}
     sentry_sdk.init(
         env('SENTRY_DSN'),
         integrations=[DjangoIntegration()],
-        release="wastd@{0}".format(WASTD_RELEASE)
+        release="tsc@{0}".format(TSC_RELEASE)
     )
 
 SETTINGS_EXPORT = [
@@ -810,6 +811,6 @@ SETTINGS_EXPORT = [
     'ANIMALS_PK',
     'PLANTS_PK',
     'OFFLINE',
-    'WASTD_RELEASE',
+    'TSC_RELEASE',
     'DATA_ROOT'
 ]
