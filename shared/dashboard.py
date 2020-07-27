@@ -98,67 +98,67 @@ class AdminDashboard(Dashboard):
             ]
         ))
 
-        # Col2: WAStD
-        self.children.append(modules.Group(
-            _('WA Sea Turtle Database'),
-            column=2,
-            collapsible=True,
-            children=[
-                modules.AppList(
-                    _('Places and Surveys'),
-                    column=2,
-                    collapsible=True,
-                    models=(
-                        'wastd.observations.models.Area',
-                        'wastd.observations.models.Survey', ),
-                ),
-                modules.AppList(
-                    _('Encounters'),
-                    column=2,
-                    collapsible=True,
-                    models=(
-                        'wastd.observations.models.Encounter',
-                        'wastd.observations.models.AnimalEncounter',
-                        'wastd.observations.models.TurtleNestEncounter',
-                        'wastd.observations.models.LineTransectEncounter',
-                        'wastd.observations.models.LoggerEncounter',
-                    ),
-                ),
-                modules.AppList(
-                    _('Encounter Observations'),
-                    column=2,
-                    collapsible=True,
-                    models=(
-                        # Adult animals:
-                        'wastd.observations.models.TagObservation',
-                        # TurtleMorphometricObservation
-                        # TurtleDamageObservation
-                        #
-                        # Turtle Nests:
-                        'wastd.observations.models.TurtleNestObservation',
-                        'wastd.observations.models.TurtleNestDisturbanceObservation',
-                        'wastd.observations.models.NestTagObservation',
-                        # TurtleHatchlingEmergenceObservation
-                        # TurtleHatchlingEmergenceOutlierObservation
-                        # LightSourceObservation
-                        # HatchlingMorphometricObservation
-                        # DugongMorphometricObservation
+        # # Col2: WAStD
+        # self.children.append(modules.Group(
+        #     _('WA Sea Turtle Database'),
+        #     column=2,
+        #     collapsible=True,
+        #     children=[
+        #         modules.AppList(
+        #             _('Places and Surveys'),
+        #             column=2,
+        #             collapsible=True,
+        #             models=(
+        #                 'wastd.observations.models.Area',
+        #                 'wastd.observations.models.Survey', ),
+        #         ),
+        #         modules.AppList(
+        #             _('Encounters'),
+        #             column=2,
+        #             collapsible=True,
+        #             models=(
+        #                 'wastd.observations.models.Encounter',
+        #                 'wastd.observations.models.AnimalEncounter',
+        #                 'wastd.observations.models.TurtleNestEncounter',
+        #                 'wastd.observations.models.LineTransectEncounter',
+        #                 'wastd.observations.models.LoggerEncounter',
+        #             ),
+        #         ),
+        #         modules.AppList(
+        #             _('Encounter Observations'),
+        #             column=2,
+        #             collapsible=True,
+        #             models=(
+        #                 # Adult animals:
+        #                 'wastd.observations.models.TagObservation',
+        #                 # TurtleMorphometricObservation
+        #                 # TurtleDamageObservation
+        #                 #
+        #                 # Turtle Nests:
+        #                 'wastd.observations.models.TurtleNestObservation',
+        #                 'wastd.observations.models.TurtleNestDisturbanceObservation',
+        #                 'wastd.observations.models.NestTagObservation',
+        #                 # TurtleHatchlingEmergenceObservation
+        #                 # TurtleHatchlingEmergenceOutlierObservation
+        #                 # LightSourceObservation
+        #                 # HatchlingMorphometricObservation
+        #                 # DugongMorphometricObservation
 
-                        # LineTransects:
-                        # TrackTallyObservation
-                        # TurtleNestDisturbanceTallyObservation
+        #                 # LineTransects:
+        #                 # TrackTallyObservation
+        #                 # TurtleNestDisturbanceTallyObservation
 
-                        # Loggers
-                        'wastd.observations.models.LoggerEncounter',
-                        # TemperatureLoggerSettings
-                        # DispatchRecord
-                        # TemperatureLoggerDeployment
+        #                 # Loggers
+        #                 'wastd.observations.models.LoggerEncounter',
+        #                 # TemperatureLoggerSettings
+        #                 # DispatchRecord
+        #                 # TemperatureLoggerDeployment
 
-                    ),
-                ),
+        #             ),
+        #         ),
 
-            ]
-        ))
+        #     ]
+        # ))
 
         # Col3: Admin
         self.children.append(modules.Group(

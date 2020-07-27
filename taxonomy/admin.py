@@ -247,7 +247,21 @@ class TaxonAdmin(ImportExportModelAdmin, MPTTModelAdmin, VersionAdmin):
         # ("parent", TreeRelatedFieldListFilter),  # performance bomb - DO NOT ENABLE
     )
 
-    # readonly_fields = ("parent", )
+    readonly_fields = (
+        "name_id",
+        "parent",
+        "paraphyletic_groups",
+        "supra_group",
+        "rank",
+        "name",
+        "canonical_name",
+        "taxonomic_name",
+        "vernacular_name",
+        "vernacular_names",
+        "author",
+        "publication_status",
+        "current",
+    )
     autocomplete_fields = ["parent", ]
     # inlines = [TaxonAreaEncounterInline, ]
     formfield_overrides = FORMFIELD_OVERRIDES

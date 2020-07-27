@@ -118,26 +118,26 @@ def dbuild():
     """Build Docker image."""
     ver = confyenv("WASTD_RELEASE", default="0.1.0")
     print(yellow("Building docker images with tag latest and {0}...".format(ver)))
-    local("rm logs/wastd.log && touch logs/wastd.log")
-    local("docker build -t dbcawa/wastd -t dbcawa/wastd:{0} .".format(ver))
+    local("rm logs/*.log && touch logs/tsc.log")
+    local("docker build -t dbcawa/tsc -t dbcawa/tsc:{0} .".format(ver))
 
 def dpush():
     """Push Docker image to Dockerhub. Requires `docker login`."""
     print(yellow("Pushing docker images to DockerHub..."))
-    local("docker push dbcawa/wastd")
+    local("docker push dbcawa/tsc")
 
 def docker():
     """Build and push docker images."""
     dbuild()
     dpush()
-    ver = confyenv("WASTD_RELEASE", default="0.1.0")
+    ver = confyenv("TSC_RELEASE", default="0.1.0")
     print(green(
         "Updated Docker images are available on DockerHub "
-        "as dbcawa/wastd:latest and dbcawa/wastd:{0}".format(ver)))
+        "as dbcawa/tsc:latest and dbcawa/tsc:{0}".format(ver)))
 
 def tag():
-    """Tag code with WASTD_RELEASE and push to GitHub."""
-    ver = confyenv("WASTD_RELEASE", default="0.1.0")
+    """Tag code with TSC_RELEASE and push to GitHub."""
+    ver = confyenv("TSC_RELEASE", default="0.1.0")
     local("git tag -a {0} -m 'Version {0}'".format(ver))
     local("git push origin {0}".format(ver))
     print(green("Code tagged as {0} and pushed to GitHub.".format(ver)))

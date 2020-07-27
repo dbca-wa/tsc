@@ -8,90 +8,93 @@ from taxonomy import api as taxonomy_api
 router = DefaultRouter()
 # meta: users, area, surveys
 router.register("users", users_api.UserViewSet)
-router.register("area", observations_api.AreaViewSet)
-router.register("surveys", observations_api.SurveyViewSet)
+# router.register("area", observations_api.AreaViewSet)
+# router.register("surveys", observations_api.SurveyViewSet)
 
-# Encounters
-router.register(
-    "encounters",
-    observations_api.EncounterViewSet,
-    basename="encounters_full")
-router.register(
-    "encounters-fast",
-    observations_api.FastEncounterViewSet,
-    basename="encounters_fast")
-router.register(
-    "encounters-src",
-    observations_api.SourceIdEncounterViewSet,
-    basename="encounters_src")
-router.register(
-    "animal-encounters",
-    observations_api.AnimalEncounterViewSet)
-router.register(
-    "turtle-nest-encounters",
-    observations_api.TurtleNestEncounterViewSet)
-router.register(
-    "logger-encounters",
-    observations_api.LoggerEncounterViewSet)
-router.register(
-    "line-transect-encounters",
-    observations_api.LineTransectEncounterViewSet)
+# # Encounters
+# router.register(
+#     "encounters",
+#     observations_api.EncounterViewSet,
+#     basename="encounters_full")
+# router.register(
+#     "encounters-fast",
+#     observations_api.FastEncounterViewSet,
+#     basename="encounters_fast")
+# router.register(
+#     "encounters-src",
+#     observations_api.SourceIdEncounterViewSet,
+#     basename="encounters_src")
+# router.register(
+#     "animal-encounters",
+#     observations_api.AnimalEncounterViewSet)
+# router.register(
+#     "turtle-nest-encounters",
+#     observations_api.TurtleNestEncounterViewSet)
+# router.register(
+#     "logger-encounters",
+#     observations_api.LoggerEncounterViewSet)
+# router.register(
+#     "line-transect-encounters",
+#     observations_api.LineTransectEncounterViewSet)
 
-# General Observations
-router.register(
-    "observations",
-    observations_api.ObservationViewSet)
-router.register(
-    "media-attachments",
-    observations_api.MediaAttachmentViewSet)
+# # General Observations
+# router.register(
+#     "observations",
+#     observations_api.ObservationViewSet)
+# router.register(
+#     "media-attachments",
+#     observations_api.MediaAttachmentViewSet)
 
-# Animal Observations
-router.register(
-    "management-actions",
-    observations_api.ManagementActionViewSet)
-router.register(
-    "tag-observations",
-    observations_api.TagObservationViewSet)
-router.register(
-    "turtle-morphometrics",
-    observations_api.TurtleMorphometricObservationViewSet)
-router.register(
-    "turtle-damage-observations",
-    observations_api.TurtleDamageObservationViewSet)
+# # Animal Observations
+# router.register(
+#     "management-actions",
+#     observations_api.ManagementActionViewSet)
+# router.register(
+#     "tag-observations",
+#     observations_api.TagObservationViewSet)
+# router.register(
+#     "turtle-morphometrics",
+#     observations_api.TurtleMorphometricObservationViewSet)
+# router.register(
+#     "turtle-damage-observations",
+#     observations_api.TurtleDamageObservationViewSet)
 
-# Turtle Nest Observations
-router.register(
-    "turtle-nest-disturbance-observations",
-    observations_api.TurtleNestDisturbanceObservationViewSet)
-router.register(
-    "nest-tag-observations",
-    observations_api.NestTagObservationViewSet)
-router.register(
-    "turtle-nest-excavations",
-    observations_api.TurtleNestObservationViewSet)
-router.register(
-    "turtle-hatchling-morphometrics",
-    observations_api.HatchlingMorphometricObservationViewSet)
-router.register(
-    "turtle-nest-hatchling-emergences",
-    observations_api.TurtleHatchlingEmergenceObservationViewSet)
-router.register(
-    "turtle-nest-hatchling-emergence-outliers",
-    observations_api.TurtleHatchlingEmergenceOutlierObservationViewSet)
-router.register(
-    "turtle-nest-hatchling-emergence-light-sources",
-    observations_api.LightSourceObservationViewSet)
+# # Turtle Nest Observations
+# router.register(
+#     "turtle-nest-disturbance-observations",
+#     observations_api.TurtleNestDisturbanceObservationViewSet)
+# router.register(
+#     "nest-tag-observations",
+#     observations_api.NestTagObservationViewSet)
+# router.register(
+#     "turtle-nest-excavations",
+#     observations_api.TurtleNestObservationViewSet)
+# router.register(
+#     "turtle-hatchling-morphometrics",
+#     observations_api.HatchlingMorphometricObservationViewSet)
+# router.register(
+#     "turtle-nest-hatchling-emergences",
+#     observations_api.TurtleHatchlingEmergenceObservationViewSet)
+# router.register(
+#     "turtle-nest-hatchling-emergence-outliers",
+#     observations_api.TurtleHatchlingEmergenceOutlierObservationViewSet)
+# router.register(
+#     "turtle-nest-hatchling-emergence-light-sources",
+#     observations_api.LightSourceObservationViewSet)
 
-# Track Tally Obs
-router.register(
-    "track-tally",
-    observations_api.TrackTallyObservationViewSet)
-router.register(
-    "turtle-nest-disturbance-tally",
-    observations_api.TurtleNestDisturbanceTallyObservationViewSet)
+# # Track Tally Obs
+# router.register(
+#     "track-tally",
+#     observations_api.TrackTallyObservationViewSet)
+# router.register(
+#     "turtle-nest-disturbance-tally",
+#     observations_api.TurtleNestDisturbanceTallyObservationViewSet)
 
 
 # conservation.ConservationListing -------------------------------------------#
+router.register(
+    "taxon-conservationlisting",
+    conservation_api.TaxonConservationListingViewSet)
 router.register(
     "community-conservationlisting",
     conservation_api.CommunityConservationListingViewSet)
@@ -107,9 +110,6 @@ router.register(
 router.register(
     "document",
     conservation_api.DocumentViewSet)
-router.register(
-    "taxon-conservationlisting",
-    conservation_api.TaxonConservationListingViewSet)
 # occurrence.AreaEncounter ---------------------------------------------------#
 # Without basename, the last registered viewset overrides the other area viewsets
 router.register(
@@ -142,32 +142,42 @@ router.register(
     "occ-observation",
     occurrence_api.ObservationGroupViewSet,
     basename="occurrence_observation_group")
+
 # Occurrence Lookups ---------------------------------------------------------#
-router.register("lookup-landform", occurrence_api.LandformViewSet)
-router.register("lookup-rocktype", occurrence_api.RockTypeViewSet)
-router.register("lookup-soiltype", occurrence_api.SoilTypeViewSet)
-router.register("lookup-soilcolour", occurrence_api.SoilColourViewSet)
-router.register("lookup-drainage", occurrence_api.DrainageViewSet)
-router.register("lookup-surveymethod", occurrence_api.SurveyMethodViewSet)
-router.register("lookup-soilcondition", occurrence_api.SoilConditionViewSet)
-router.register("lookup-countaccuracy", occurrence_api.CountAccuracyViewSet)
-router.register("lookup-countmethod", occurrence_api.CountMethodViewSet)
-router.register("lookup-countsubject", occurrence_api.CountSubjectViewSet)
-router.register("lookup-plantcondition", occurrence_api.PlantConditionViewSet)
-router.register("lookup-detectionmethod",
-                occurrence_api.DetectionMethodViewSet)
-router.register("lookup-confidence", occurrence_api.ConfidenceViewSet)
-router.register("lookup-reproductivematurity",
-                occurrence_api.ReproductiveMaturityViewSet)
 router.register("lookup-animalhealth", occurrence_api.AnimalHealthViewSet)
 router.register("lookup-animalsex", occurrence_api.AnimalSexViewSet)
 router.register("lookup-causeofdeath", occurrence_api.CauseOfDeathViewSet)
+router.register("lookup-confidence", occurrence_api.ConfidenceViewSet)
+router.register("lookup-countaccuracy", occurrence_api.CountAccuracyViewSet)
+router.register("lookup-countmethod", occurrence_api.CountMethodViewSet)
+router.register("lookup-countsubject", occurrence_api.CountSubjectViewSet)
+router.register("lookup-detectionmethod",
+                occurrence_api.DetectionMethodViewSet)
+router.register("lookup-drainage", occurrence_api.DrainageViewSet)
+router.register("lookup-landform", occurrence_api.LandformViewSet)
+router.register("lookup-rocktype", occurrence_api.RockTypeViewSet)
+router.register("lookup-permittype", occurrence_api.PermitTypeViewSet)
+router.register("lookup-plantcondition", occurrence_api.PlantConditionViewSet)
+router.register("lookup-soiltype", occurrence_api.SoilTypeViewSet)
+router.register("lookup-soilcolour", occurrence_api.SoilColourViewSet)
+router.register("lookup-surveymethod", occurrence_api.SurveyMethodViewSet)
+router.register("lookup-reproductivematurity",
+                occurrence_api.ReproductiveMaturityViewSet)
 router.register("lookup-secondarysigns", occurrence_api.SecondarySignsViewSet)
 router.register("lookup-sampletype", occurrence_api.SampleTypeViewSet)
 router.register("lookup-sampledestination",
                 occurrence_api.SampleDestinationViewSet)
-router.register("lookup-permittype", occurrence_api.PermitTypeViewSet)
+router.register("lookup-soilcondition", occurrence_api.SoilConditionViewSet)
+
+# Occurrence ObsGroups -------------------------------------------------------#
 # taxonomy
+router.register("taxon", taxonomy_api.TaxonViewSet, basename="taxon_full")
+router.register("taxon-fast", taxonomy_api.FastTaxonViewSet, basename="taxon_fast")
+router.register("vernacular", taxonomy_api.VernacularViewSet)
+router.register("crossreference", taxonomy_api.CrossreferenceViewSet)
+router.register("community", taxonomy_api.CommunityViewSet)
+
+# WACensus staging
 router.register("names", taxonomy_api.HbvNameViewSet)
 router.register("supra", taxonomy_api.HbvSupraViewSet)
 router.register("groups", taxonomy_api.HbvGroupViewSet)
@@ -177,9 +187,3 @@ router.register("species", taxonomy_api.HbvSpeciesViewSet)
 router.register("vernaculars", taxonomy_api.HbvVernacularViewSet)
 router.register("xrefs", taxonomy_api.HbvXrefViewSet)
 router.register("parents", taxonomy_api.HbvParentViewSet)
-router.register("taxon", taxonomy_api.TaxonViewSet, basename="taxon_full")
-router.register("taxon-fast", taxonomy_api.FastTaxonViewSet,
-                basename="taxon_fast")
-router.register("vernacular", taxonomy_api.VernacularViewSet)
-router.register("crossreference", taxonomy_api.CrossreferenceViewSet)
-router.register("community", taxonomy_api.CommunityViewSet)
