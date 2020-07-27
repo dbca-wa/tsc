@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Django settings for WAStD project.
+Django settings for TSC project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/dev/topics/settings/
@@ -792,7 +792,7 @@ GRAPPELLI_INDEX_DASHBOARD = 'shared.dashboard.AdminDashboard'
 
 # Error reporting
 
-TSC_RELEASE = env("TSC_RELEASE", default="master")
+TSC_RELEASE = env("TSC_RELEASE", default="main")
 if env('SENTRY_DSN', False):
     # RAVEN_CONFIG = {'dsn': env('SENTRY_DSN')}
     sentry_sdk.init(

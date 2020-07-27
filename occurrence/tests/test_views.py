@@ -493,12 +493,6 @@ class TaxonAreaEncounterTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'pages/healthcheck.html')
 
-    def test_map_loads(self):
-        """Test map page."""
-        response = self.client.get(reverse("map"))
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/map.html')
-
     def test_tae_absolute_admin_url_loads(self):
         """Test absolute admin url."""
         response = self.client.get(self.tae.absolute_admin_url)
