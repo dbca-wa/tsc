@@ -147,6 +147,6 @@ def tag():
 
 def release():
     """Make release: doc, tag, docker."""
-    # doc() TODO: pipenv to requirements.txt, gha builds docs on gh-pages
+    doc() #TODO: pipenv to requirements.txt, gha builds docs on gh-pages
     tag()
     docker()
