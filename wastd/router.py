@@ -8,7 +8,7 @@ from taxonomy import api as taxonomy_api
 router = DefaultRouter()
 # meta: users, area, surveys
 router.register("users", users_api.UserViewSet)
-# router.register("area", observations_api.AreaViewSet)
+router.register("area", observations_api.AreaViewSet)
 # router.register("surveys", observations_api.SurveyViewSet)
 
 # # Encounters
