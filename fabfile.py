@@ -57,6 +57,7 @@ def shell():
     """Open a shell_plus."""
     local('python manage.py shell_plus')
 
+
 def rundev():
     """Runserver with dev settings."""
     local('python manage.py runserver --settings=config.settings.local 0.0.0.0:8220')
@@ -151,6 +152,6 @@ def tag():
 
 def release():
     """Make release: doc, tag, docker."""
-    doc()
+    # doc() TODO: pipenv to requirements.txt, gha builds docs on gh-pages
     tag()
     docker()
