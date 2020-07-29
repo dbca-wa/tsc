@@ -53,11 +53,11 @@ jobs:
     - name: Run parallel tests and skip test coverage
       run: fab ptest
 
-    - name: Build documentation
-      if: matrix.python-version == 3.8
-      uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "docs_source/"
+    # - name: Build documentation
+    #   if: matrix.python-version == 3.8
+    #   uses: ammaraskar/sphinx-action@master
+    #   with:
+    #     docs-folder: "docs_source/"
 
     - name: Commit documentation changes
       if: matrix.python-version == 3.8
@@ -65,7 +65,6 @@ jobs:
         git clone https://github.com/dbca-wa/tsc.git --branch gh-pages --single-branch gh-pages
         cp -r docs/* gh-pages/
         cd gh-pages
-        pip install -r base/requirements.txt
         git config --local user.email "${{ secrets.USER_EMAIL }}"
         git config --local user.name "${{ secrets.USER_NAME }}"
         git add .
