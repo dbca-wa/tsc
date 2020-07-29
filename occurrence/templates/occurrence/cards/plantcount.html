@@ -47,6 +47,8 @@
       Popn area estimated {{ object.population_area_estimated_m2 }} m<sup>2</sup>.
       Individual quadrat area {{ object.quadrat_area_individual_m2 }} m<sup>2</sup>.
       Total quadrat area {{ object.quadrat_area_total_m2 }} m<sup>2</sup>.
+      Count method: {{ object.get_count_method_display }}
+      ({{ object.get_count_subject_display }} {{ object.get_count_accuracy_display }}).
     </p>
     {% endif %}
 

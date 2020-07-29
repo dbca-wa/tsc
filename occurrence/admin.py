@@ -111,6 +111,21 @@ class HabitatCompositionAdmin(FSMTransitionMixin, VersionAdmin):
     fsm_field = ['status', ]
 
 
+    def get_queryset(self, request):
+        return super(
+            HabitatCompositionAdmin, self
+        ).get_queryset(
+            request
+        ).prefetch_related(
+            "encounter__encountered_by",
+            "landform",
+            "rock_type",
+            "soil_type",
+            "soil_colour",
+            "drainage",
+        )
+
+
 class HabitatCompositionInline(admin.TabularInline):
     """HabitatComposition Inline."""
 
@@ -143,6 +158,16 @@ class AreaAssessmentAdmin(FSMTransitionMixin, VersionAdmin):
     ]
     form = occ_forms.AreaAssessmentForm
     fsm_field = ['status', ]
+
+    def get_queryset(self, request):
+        return super(
+            AreaAssessmentAdmin, self
+        ).get_queryset(
+            request
+        ).prefetch_related(
+            "encounter__encountered_by",
+            "survey_method",
+        )
 
 
 class AreaAssessmentInline(admin.TabularInline):
@@ -182,6 +207,16 @@ class HabitatConditionAdmin(FSMTransitionMixin, VersionAdmin):
     form = occ_forms.HabitatConditionForm
     fsm_field = ['status', ]
 
+    def get_queryset(self, request):
+        return super(
+            HabitatConditionAdmin, self
+        ).get_queryset(
+            request
+        ).prefetch_related(
+            "encounter__encountered_by",
+            "soil_condition",
+        )
+
 
 class HabitatConditionInline(admin.TabularInline):
     """HabitatCondition Inline."""
@@ -208,6 +243,10 @@ class FireHistoryAdmin(FSMTransitionMixin, VersionAdmin):
     form = occ_forms.FireHistoryForm
     fsm_field = ['status', ]
 
+    def get_queryset(self, request):
+        return super(
+            FireHistoryAdmin, self
+        ).get_queryset(request).prefetch_related('encounter__encountered_by', )
 
 class FireHistoryInline(admin.TabularInline):
     """FireHistory Inline."""
@@ -217,6 +256,8 @@ class FireHistoryInline(admin.TabularInline):
     model = occ_models.FireHistory
     # form = occ_forms.FireHistoryForm
     classes = ('grp-collapse grp-open',)
+
+
 
 # -----------------------------------------------------------------------------
 # PlantCount
@@ -358,6 +399,10 @@ class PlantCountAdmin(FSMTransitionMixin, VersionAdmin):
          ),
     )
 
+    def get_queryset(self, request):
+        return super(
+            PlantCountAdmin, self
+        ).get_queryset(request).prefetch_related('encounter__encountered_by', )
 
 class PlantCountInline(admin.StackedInline):
     """PlantCount Inline."""
@@ -386,6 +431,15 @@ class VegetationClassificationAdmin(FSMTransitionMixin, VersionAdmin):
     form = occ_forms.VegetationClassificationForm
     fsm_field = ['status', ]
 
+    def get_queryset(self, request):
+        return super(
+            VegetationClassificationAdmin, self
+        ).get_queryset(
+            request
+        ).prefetch_related(
+            "encounter__encountered_by",
+        )
+
 
 class VegetationClassificationInline(admin.TabularInline):
     """VegetationClassification Inline."""
@@ -409,6 +463,15 @@ class AssociatedSpeciesAdmin(FSMTransitionMixin, VersionAdmin):
     fsm_field = ['status', ]
     autocomplete_fields = ['taxon', ]
 
+    def get_queryset(self, request):
+        return super(
+            AssociatedSpeciesAdmin, self
+        ).get_queryset(
+            request
+        ).prefetch_related(
+            "encounter__encountered_by",
+            "taxon",
+        )
 
 class AssociatedSpeciesInline(admin.TabularInline):
     """Associated Species  Inline."""
@@ -553,6 +616,21 @@ class AnimalObservationAdmin(FSMTransitionMixin, VersionAdmin):
     secondary_signs_list.short_description = "Secondary Signs"
 
 
+    def get_queryset(self, request):
+        return super(
+            AnimalObservationAdmin, self
+        ).get_queryset(
+            request
+        ).prefetch_related(
+            "encounter__encountered_by",
+            "detection_method",
+            "species_id_confidence",
+            "maturity",
+            "health",
+            "cause_of_death",
+        )
+
+
 class AnimalObservationInline(admin.StackedInline):
     """AnimalObservation Inline."""
 
@@ -643,6 +721,16 @@ class AreaEncounterAdmin(FSMTransitionMixin, ImportExportModelAdmin, VersionAdmi
          ),
     )
     inlines = [CustomStateLogInline, ]
+
+    def get_queryset(self, request):
+        return super(
+            AreaEncounterAdmin, self
+        ).get_queryset(
+            request
+        ).prefetch_related(
+            "encountered_by",
+            "encounter_type",
+        )
 
 
 @admin.register(occ_models.TaxonAreaEncounter)
