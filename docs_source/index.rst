@@ -23,17 +23,17 @@ Threatened Species and Communities of WA: occurrences, conservation status, mana
 
 **Note** This documentation is being updated after the split of TSC from WAStD.
 
-.. .. toctree::
-..    :maxdepth: 3
+.. toctree::
+   :maxdepth: 3
 
-..    data_collection/data_collection_overview
-..    data_collection/data_collection_admin
-..    data_collection/data_collection_training
-..    data_curators
-..    data_consumers
-..    business_analysts
-..    maintainers
-..    developers
+   data_collection/data_collection_overview
+   data_collection/data_collection_admin
+   data_collection/data_collection_training
+   data_curators
+   data_consumers
+   business_analysts
+   maintainers
+   developers
 
 =======================
 Technical documentation
