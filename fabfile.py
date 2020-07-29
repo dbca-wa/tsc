@@ -5,12 +5,7 @@ Convenience wrapper for often used operations.
 """
 from fabric.api import env, local  # settings, cd, run
 from fabric.colors import green, yellow  # red
-import confy
 from confy import env as confyenv
-try:
-    confy.read_environment_file(".env")
-except:
-    pass
 
 # from fabric.contrib.files import exists, upload_template
 

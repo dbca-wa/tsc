@@ -23,7 +23,6 @@ coreapi-cli==1.0.9
 coreschema==0.0.4
 coverage==5.2
 coveralls==2.1.1
-confy==0.3.8
 cryptography==3.0
 dbca-utils==1.1.1
 decorator==4.4.2

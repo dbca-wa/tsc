@@ -31,11 +31,11 @@ xmltodict = "==0.12.0"
 django-allauth = "==0.42.0"
 dbca-utils = "==1.1.1"
 django-background-tasks = "==1.2.5"
-fabric3 = "==1.14.post1"
+Fabric3 = "==1.14.post1"
 gunicorn = "==20.0.4"
-uwsgi = "==2.0.19.1"
+uWSGI = "==2.0.19.1"
 python-memcached = "*"
-django-confy = "==1.0.4"
+django-confy = ">=1.0.4"
 django-environ = "==0.4.5"
 Unipath = "==1.1"
 pandas = ">=1.0.5"
@@ -96,14 +96,13 @@ pytest-sugar = "*"
 model-mommy = "*"
 graphviz = "*"
 tblib = "*"
-confy = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.7"
 
-[packages.django_fixture_magic]
+[packages.django-fixture-magic]
 git = "https://github.com/davedash/django-fixture-magic.git"
 editable = true
 ref = "master"

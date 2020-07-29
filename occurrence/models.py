@@ -1018,12 +1018,6 @@ class PlantCondition(CodeLabelDescriptionMixin, models.Model):
     pass
 
 
-class PlantCountMethod(CodeLabelDescriptionMixin, models.Model):
-    """The count method of a PlantCount."""
-
-    pass
-
-
 class PlantCount(ObservationGroup):
     """Population plant count."""
 
