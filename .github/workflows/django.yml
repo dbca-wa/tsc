@@ -55,8 +55,8 @@ jobs:
 
     - name: Build documentation
     - uses: ammaraskar/sphinx-action@master
-        with:
-          docs-folder: "docs_source/"
+      with:
+        docs-folder: "docs_source/"
 
     - name: Commit documentation changes
       run: |
