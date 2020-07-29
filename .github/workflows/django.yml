@@ -54,7 +54,7 @@ jobs:
       run: fab ptest
 
     - name: Build documentation
-    - uses: ammaraskar/sphinx-action@master
+      uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs_source/"
 
