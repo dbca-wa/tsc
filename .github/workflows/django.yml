@@ -54,6 +54,7 @@ jobs:
       run: fab ptest
 
     - name: Build documentation
+      if: matrix.python-version == 3.8
       uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs_source/"
