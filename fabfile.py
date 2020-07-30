@@ -108,8 +108,7 @@ def ptest():
 
 def doc():
     """Compile docs, draw data models and transitions."""
-    local("mkdir -p docs_source/_static && cd docs_source && "
-          "make clean && make html && cd ..")
+    local("cd docs_source && make clean && make html && cd ..")
 
 
 def dbuild():
