@@ -329,7 +329,10 @@ class TaxonAreaEncounter(AreaEncounter):
         Taxon,
         on_delete=models.PROTECT,
         related_name="taxon_occurrences",
-        help_text=_("The taxonomic name of the encountered subject."),
+        help_text=_("The taxonomic name of the encountered subject. "
+                    "Type the taxonomic or vernacular name to see available names. "
+                    "The autocomplete widget times out if left for too long."
+                    ),
     )
 
     class Meta:
