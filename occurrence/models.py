@@ -970,26 +970,34 @@ class VegetationClassification(ObservationGroup):
 
     level1 = models.TextField(
         blank=True, null=True,
-        verbose_name=_("Level 1"),
-        help_text=_("The first classification level."),
+        verbose_name=_("Surface"),
+        help_text=_("The first classification level: Surface. "
+                    "Structural formations should follow 2009 Australian "
+                    "Soil and Land Survey Field Handbook guidelines."),
     )
 
     level2 = models.TextField(
         blank=True, null=True,
-        verbose_name=_("Level 2"),
-        help_text=_("The first classification level."),
+        verbose_name=_("Near Surface"),
+        help_text=_("The second classification level: Near Surface"),
     )
 
     level3 = models.TextField(
         blank=True, null=True,
-        verbose_name=_("Level 3"),
-        help_text=_("The first classification level."),
+        verbose_name=_("Elevated"),
+        help_text=_("The third classification level: Elevated"),
     )
 
     level4 = models.TextField(
         blank=True, null=True,
-        verbose_name=_("Level 4"),
-        help_text=_("The first classification level."),
+        verbose_name=_("Intermediate"),
+        help_text=_("The fourth classification level: Intermediate"),
+    )
+
+    level5 = models.TextField(
+        blank=True, null=True,
+        verbose_name=_("Overstorey"),
+        help_text=_("The fifth classification level: Overstorey"),
     )
 
     class Meta:
