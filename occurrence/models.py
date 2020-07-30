@@ -931,7 +931,8 @@ class FireHistory(ObservationGroup):
         choices=HMLN_CHOICES,
         help_text=_(
             "Estimated intensity of last fire on a scale from High to Low, "
-            "or NA if no evidence of past fires."
+            "including no evidence of fire, "
+            "or leave NA if this information is not available."
         ),
     )
 
