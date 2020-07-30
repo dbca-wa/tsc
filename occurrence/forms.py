@@ -603,6 +603,7 @@ class VegetationClassificationForm(forms.ModelForm):
             "level2",
             "level3",
             "level4",
+            "level5",
         )
         widgets = {
             "encounter": occ_widgets.AreaEncounterWidget(),

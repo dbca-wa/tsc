@@ -404,6 +404,7 @@ class PlantCountAdmin(FSMTransitionMixin, VersionAdmin):
             PlantCountAdmin, self
         ).get_queryset(request).prefetch_related('encounter__encountered_by', )
 
+
 class PlantCountInline(admin.StackedInline):
     """PlantCount Inline."""
 
@@ -427,6 +428,7 @@ class VegetationClassificationAdmin(FSMTransitionMixin, VersionAdmin):
         "level2",
         "level3",
         "level4",
+        "level5",
     ]
     form = occ_forms.VegetationClassificationForm
     fsm_field = ['status', ]

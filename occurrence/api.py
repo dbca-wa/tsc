@@ -608,6 +608,7 @@ class ObservationGroupViewSet(ModelViewSet):
                         level2=obj['level2'] if 'level2' in obj else '',
                         level3=obj['level3'] if 'level3' in obj else '',
                         level4=obj['level4'] if 'level4' in obj else '',
+                        level5=obj['level5'] if 'level5' in obj else '',
                     )
                     created_count += 1
                 except:
