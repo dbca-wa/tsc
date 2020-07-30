@@ -921,7 +921,8 @@ class FireHistory(ObservationGroup):
     last_fire_date = models.DateField(
         verbose_name=_("Date of last fire"),
         blank=True, null=True,
-        help_text=_("The estimated date of the last fire, if evident."))
+        help_text=_("The estimated date of the last fire, if evident. "
+                    "Choose the closest date to your estimate."))
 
     fire_intensity = models.CharField(
         verbose_name=_("Fire intensity"),
