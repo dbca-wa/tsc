@@ -1142,7 +1142,7 @@ class PlantCount(ObservationGroup):
         validators=[MinValueValidator(0), MaxValueValidator(100)],
         blank=True, null=True,
         verbose_name=_("Flowering Plants [%]"),
-        help_text=_("The proportion of plants of surveyed population in ."),
+        help_text=_("The proportion of flowering plants of surveyed population in percent [0..100]."),
     )
 
     clonal_present = models.BooleanField(
