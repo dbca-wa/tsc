@@ -743,7 +743,7 @@ LOGGING = {
             'propagate': True
         },
         'django': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'handlers': ['console', 'sentry'],
             'propagate': True
         },
@@ -758,7 +758,7 @@ LOGGING = {
             'propagate': True,
         },
         'shared': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'handlers': ['console', 'sentry'],
             'propagate': True,
         },
@@ -768,17 +768,17 @@ LOGGING = {
         #     'propagate': True,
         # },
         'taxonomy': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'handlers': ['console', 'sentry'],
             'propagate': True,
         },
         'conservation': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'handlers': ['console', 'sentry'],
             'propagate': True,
         },
         'occurrence': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'handlers': ['console', 'sentry'],
             'propagate': True,
         },
