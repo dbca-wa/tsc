@@ -209,7 +209,12 @@ class AreaEncounter(PolymorphicModel,
         help_text=_(
             "A point representing the area occupied by the encountered "
             "subject. If empty, the point will be calculated as the centroid "
-            "of the polygon extent."))
+            "of the polygon extent. "
+            "If you have coordinates, click first into the map to generate GeoJSON, "
+            "then insert your coordinates into the GeoJSON. Save and review!"
+
+        )
+    )
 
     northern_extent = models.FloatField(
         verbose_name=_("Northernmost latitude"),
