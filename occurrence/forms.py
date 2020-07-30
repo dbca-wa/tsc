@@ -464,7 +464,6 @@ class PlantCountForm(forms.ModelForm):
             "no_alive_simple",
             "no_dead_simple",
             # Quadrats
-            "population_area_estimated_m2",
             "quadrats_present",
             "quadrats_details_attached",
             "no_quadrats_surveyed",
@@ -482,6 +481,7 @@ class PlantCountForm(forms.ModelForm):
             "plant_condition",
             "comments",
 
+            "population_area_estimated_m2",
             "count_method",
             "count_accuracy",
             "quadrats_present",
@@ -512,7 +512,10 @@ class PlantCountForm(forms.ModelForm):
             Fieldset(
                 "Plant count survey",
                 Div(
-                    Div("land_manager_present", css_class=QUARTER),
+                    Div("land_manager_present"),
+                ),
+                Div(
+                    Div("population_area_estimated_m2", css_class=QUARTER),
                     Div("count_method", css_class=QUARTER),
                     Div("count_accuracy", css_class=QUARTER),
                     Div("count_subject", css_class=QUARTER),
@@ -542,13 +545,13 @@ class PlantCountForm(forms.ModelForm):
             Fieldset(
                 "Quadrats",
                 Div(
-                    Div("quadrats_present", css_class=THIRDS),
-                    Div("quadrats_details_attached", css_class=THIRDS),
-                    Div("no_quadrats_surveyed", css_class=THIRDS),
+                    Div("quadrats_present", css_class=HALF),
+                    Div("quadrats_details_attached", css_class=HALF),
                     css_class="row"
                 ),
                 Div(
-                    Div("population_area_estimated_m2", css_class=THIRDS),
+
+                    Div("no_quadrats_surveyed", css_class=THIRDS),
                     Div("quadrat_area_individual_m2", css_class=THIRDS),
                     Div("quadrat_area_total_m2", css_class=THIRDS),
                     css_class="row"
