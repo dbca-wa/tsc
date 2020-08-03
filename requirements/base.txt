@@ -63,7 +63,7 @@ django-graphql-geojson==0.1.4
 django-grappelli==2.14.2
 django-import-export==2.3.0
 django-js-asset==1.2.2
-django-leaflet==0.27.0
+django-leaflet==0.27.1
 django-map-widgets==0.3.0
 django-model-utils==4.0.0
 django-mptt==0.11.0

@@ -220,7 +220,9 @@ class ObservationAuditMixin(models.Model):
         blank=True, null=True,
         db_index=True,
         help_text=_("The datetime of the original encounter, "
-                    "entered in the local time zone GMT+08 (Perth/Australia)."))
+                    "entered in the local time zone GMT+08 (Perth/Australia) "
+                    "in the format DD/MM/YYYY HH:MM, e.g. 21/10/2010 13:45. "
+                    ))
 
     encountered_by = models.ForeignKey(
         User,
