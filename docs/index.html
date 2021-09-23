@@ -1,70 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>TSC - Threatened Species and Communities &mdash; TSC 0.9.6 documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSC - Threatened Species and Communities &mdash; TSC 0.9.7 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Data collection" href="data_collection/data_collection_overview.html" /> 
+    <link rel="next" title="Data capture" href="data_capture.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="#" class="icon icon-home"> TSC
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 0.9
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -72,374 +38,84 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="data_collection/data_collection_overview.html">Data collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection/data_collection_admin.html">Data collection administrators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection/data_collection_training.html">Data collection training</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_curators.html">Data curators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_curators.html#data-upload-from-odk">Data upload from ODK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_curators.html#data-qa">Data QA</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_curators.html#data-release">Data release</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_consumers.html">Data consumers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="business_analysts.html">Business Analysts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="business_analysts.html#how-it-s-made-the-process">How it’s made - the process</a></li>
-<li class="toctree-l1"><a class="reference internal" href="business_analysts.html#reproducible-research">Reproducible Research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_capture.html">Data capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_import.html">Data import</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_curation.html">Data curation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_access.html">Data access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow_conservationlisting.html">Workflows: Conservation Listing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maintainers.html">Application maintainers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developers.html">Developer documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developers.html#project-delivery-ticking-the-boxes">Project delivery: ticking the boxes</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="#">TSC</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="#">Docs</a> &raquo;</li>
-        
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
       <li>TSC - Threatened Species and Communities</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="tsc-threatened-species-and-communities">
-<h1>TSC - Threatened Species and Communities<a class="headerlink" href="#tsc-threatened-species-and-communities" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="tsc-threatened-species-and-communities">
+<h1>TSC - Threatened Species and Communities<a class="headerlink" href="#tsc-threatened-species-and-communities" title="Permalink to this headline"></a></h1>
 <a class="reference external image-reference" href="https://github.com/pydanny/cookiecutter-django/"><img alt="Built with Cookiecutter Django" src="https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg" /></a>
 <a class="reference external image-reference" href="https://circleci.com/gh/dbca-wa/tsc"><img alt="Test status" src="https://circleci.com/gh/dbca-wa/tsc.svg?style=svg" /></a>
 <a class="reference external image-reference" href="https://coveralls.io/github/dbca-wa/tsc?branch=main"><img alt="Test coverage" src="https://coveralls.io/repos/github/dbca-wa/tsc/badge.svg?branch=main" /></a>
-<a class="reference external image-reference" href="https://opensource.org/licenses/MIT"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
-</div>
-<div class="section" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://opensource.org/licenses/MIT"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-green.svg" /></a>
+</section>
+<section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h1>
 <p>Threatened Species and Communities of WA: occurrences, conservation status, management plans.</p>
 <p><strong>Note</strong> This documentation is being updated after the split of TSC from WAStD.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data_collection/data_collection_overview.html">Data collection</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_overview.html#solution-architecture-and-infrastructure">Solution architecture and infrastructure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_overview.html#lessons-learnt-from-paper-based-field-data-collection">Lessons learnt from paper-based field data collection</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#scenario-1-two-tags-applied-both-tags-recorded-incorrectly">Scenario 1: Two tags applied, both tags recorded incorrectly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_capture.html">Data capture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_capture.html#conservation-actions">Conservation Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_capture.html#threatened-fauna-occurrence">Threatened Fauna Occurrence</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_capture.html#paper-form">Paper form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_capture.html#digital-form">Digital form</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_overview.html#lessons-learnt-from-mobile-field-data-collection">Lessons learnt from mobile field data collection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_overview.html#gps-location-and-wifi">GPS location and WiFi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_overview.html#devices-shoot-out">Devices shoot-out</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#general-notes">General notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#samsung-galaxy-s2-9-7">Samsung Galaxy S2 9.7”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#samsung-galaxy-s2-8">Samsung Galaxy S2 8”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#samsung-galaxy-tab-a-7">Samsung Galaxy Tab A 7”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#lenovo-tab-3-7-tb3-730f">Lenovo Tab 3 7” TB3-730F</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#lenovo-tab-7-essential-tb-7304f">Lenovo Tab 7 Essential TB-7304F</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#lenovo-tab-e7">Lenovo Tab E7</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#moto-g4-plus-phone">Moto G4 Plus phone</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#moto-g6-phone">Moto G6 phone</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#general-observations">General observations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_capture.html#threatened-flora-occurrence">Threatened Flora Occurrence</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_capture.html#id2">Paper form</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_overview.html#cost-benefit-analysis-for-digital-data-collection">Cost-benefit analysis for digital data collection</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#paper-based-data-collection">Paper-based data collection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#digital-data-collection">Digital data collection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_overview.html#re-thinking-datasheets">Re-thinking datasheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_capture.html#ecological-community-occurrence">Ecological Community Occurrence</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_capture.html#tec-occurrence-report-form">TEC Occurrence Report Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_capture.html#tec-bushland-plant-survey-recording-sheet">TEC Bushland Plant Survey Recording Sheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_capture.html#tsc-data-entry">TSC data entry</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection/data_collection_admin.html">Data collection administrators</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#admin-getting-started">Admin: Getting started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#admin-prepare-field-packs">Admin: Prepare field packs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#admin-first-time-setup">Admin: First time setup</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_admin.html#setup-the-tablet">Setup the tablet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_admin.html#setup-odk-collect-from-qr-code">Setup ODK Collect from QR code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_admin.html#setup-odk-collect-from-scratch">Setup ODK Collect from scratch</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#providing-training">Providing training</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#admin-prepare-devices-pre-survey">Admin: Prepare devices pre survey</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#admin-prepare-a-length-reference-pre-survey">Admin: Prepare a length reference pre survey</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#collector-collect-data">Collector: Collect data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#admin-review-data">Admin: Review data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#admin-upload-data">Admin: Upload data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#where-s-the-data-now">Where’s the data now?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#admin-update-forms">Admin: Update forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_admin.html#admin-form-versions-and-change-log">Admin: Form versions and change log</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_admin.html#site-visit-start">Site Visit Start</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_admin.html#site-visit-end">Site Visit End</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_admin.html#turtle-track-or-nest-track-or-treat">Turtle Track or Nest / “Track or Treat”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_admin.html#turtle-tagging">Turtle Tagging</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_admin.html#predator-or-disturbance-fox-sake">Predator or Disturbance / “Fox Sake”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_admin.html#marine-wildlife-incident">Marine Wildlife Incident</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection/data_collection_training.html">Data collection training</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_training.html#preparing-a-device-pre-survey">Preparing a device pre survey</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#device-checkout-broome-cable-beach">Device checkout Broome - Cable Beach</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#device-checkin-broome-cable-beach">Device checkin Broome - Cable Beach</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#device-checkout-kimberley-anna-plains">Device checkout Kimberley - Anna Plains</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#device-checkin-kimberley-anna-plains">Device checkin Kimberley - Anna Plains</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#todo-device-locations-karratha-wptp">TODO Device locations Karratha WPTP</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_training.html#collecting-turtle-data">Collecting turtle data</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#data-collection-protocol-overview">Data collection protocol overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#track-count-work-flow">Track count work flow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#protocol-speed-run-track-count">Protocol “speed run” track count</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#protocol-nest-counts">Protocol “nest counts”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#protocol-fan-angles">Protocol “fan angles”</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_training.html#marine-wildlife-incident-turtle-stranding">Marine Wildlife Incident (Turtle Stranding)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection/data_collection_training.html#training-beach">Training beach</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_collection/data_collection_training.html#training-walk-through">Training walk-through</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="data_curators.html">Data curators</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#conservation-actions">Conservation Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#threatened-fauna-occurrence">Threatened Fauna Occurrence</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#paper-form">Paper form</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#digital-form">Digital form</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#threatened-flora-occurrence">Threatened Flora Occurrence</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#id1">Paper form</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#ecological-community-occurrence">Ecological Community Occurrence</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#tec-occurrence-report-form">TEC Occurrence Report Form</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#tec-bushland-plant-survey-recording-sheet">TEC Bushland Plant Survey Recording Sheet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#tsc-data-entry">TSC data entry</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#turtle-tracks-or-nests">Turtle Tracks or Nests</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#section-encounter">Section “Encounter”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#section-nest">Section “Nest”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#section-media-attachments">Section “Media Attachments”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#other-sections">Other sections</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#turtle-strandings">Turtle Strandings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#convert-legacy-files">Convert legacy files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#wastd-minimal-record-and-identifier">WAStD minimal record and identifier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#rename-legacy-files-using-wastd-record-identifier">Rename legacy files using WAStD record identifier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#upload-files">Upload files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#information-extraction">Information extraction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#turtle-morphometric-observations">Turtle Morphometric Observations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#updating-an-existing-stranding-record">Updating an existing stranding record</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#outcome">Outcome</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#cetacean-strandings">Cetacean Strandings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#turtle-tagging">Turtle Tagging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#tag-returns">Tag returns</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#turtle-tracks">Turtle Tracks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#temperature-loggers">Temperature Loggers</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="data_curators.html#data-upload-from-odk">Data upload from ODK</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#export-files">Export files</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="data_curators.html#data-qa">Data QA</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#proofreading">Proofreading</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#curating-data">Curating data</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="data_curators.html#data-release">Data release</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_curators.html#data-qa-for-turtle-track-census">Data QA for turtle track census</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#data-flow-of-surveys">Data flow of surveys</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#flag-training-surveys">Flag training surveys</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#double-check-reporter-names">Double-check reporter names</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#qa-survey-end-time">QA Survey end time</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#populate-team">Populate team</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#add-missing-surveys">Add missing surveys</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_curators.html#add-missing-users">Add missing users</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="data_consumers.html">Data consumers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_consumers.html#for-humans-gui">For humans: GUI</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#map">Map</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#data">Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#backstage">Backstage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#api-preview">API preview</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_consumers.html#for-machines-api">For machines: API</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#api-json-table">API &gt; JSON &gt; table</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#api-parameters">API parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="data_consumers.html#data-analysis">Data Analysis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#tag-life-cycle">Tag life cycle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#animal-life-cycle">Animal life cycle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#re-visiting-existing-points">Re-visiting existing points</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_consumers.html#accessing-the-data-in-gis">Accessing the data in GIS</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="business_analysts.html">Business Analysts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#glossary">Glossary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#aims">Aims</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#overview-turtle-monitoring">Overview - Turtle monitoring</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#overview-data-management">Overview - Data management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#data-management-roles">Data management roles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#turtle-business-processes-current-state">Turtle business processes current state</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#turtle-business-processes-ideal-state">Turtle business processes ideal state</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-processes-along-the-data-life-cycle">IT processes along the Data life cycle</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#business-process-turtle-strandings">Business Process Turtle Strandings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#problem">Problem</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#task">Task</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#constraints">Constraints</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#current-implementation">Current implementation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-stranding-incident-report">IT process Stranding incident report</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-stranding-data-curation">IT process Stranding data curation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-stranding-data-analysis">IT process Stranding data analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#use-case-ministerial-inquiry-annual-report-strategic-advice">Use case: Ministerial inquiry, annual report, strategic advice</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#gap-analysis">Gap analysis</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#business-process-turtle-tagging">Business Process Turtle Tagging</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-turtle-tag-asset-management">IT process Turtle tag asset management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-turtle-tagging-field-data-collection">IT process Turtle tagging field data collection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-turtle-tagging-data-curation-field-and-office">IT process Turtle tagging data curation (field and office)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-turtle-tagging-data-analysis">IT process Turtle tagging data analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#legacy-system-wamtram-2">Legacy system: WAMTRAM 2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#interim-solution-etl-to-wastd">Interim solution: ETL to WAStD</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#long-term-solution-new-data-entry-tool">Long term solution: New data entry tool</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#insight-from-tagging-data">Insight from tagging data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#use-case-turtle-tagging-digital-data-capture">Use case: Turtle Tagging digital data capture</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#use-case-inquiry-about-tagged-turtle">Use case: Inquiry about tagged turtle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#id21">Gap analysis</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#business-process-turtle-tracks">Business Process Turtle Tracks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-turtle-track-and-nest-count">IT process Turtle track and nest count</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-turtle-track-and-nest-data-curation">IT process Turtle track and nest data curation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-legacy-data-etl">IT process Legacy data ETL</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-aerial-imagery-track-count">IT process Aerial imagery track count</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-turtle-track-and-nest-count-analysis">IT process Turtle track and nest count analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#legacy-system-ningaloo-track-count-database">Legacy system: Ningaloo Track count database</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#use-case-track-data-collection">Use case: Track data collection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#use-case-track-data-analysis">Use case: Track data analysis</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#non-functional-requirements">Non-functional requirements</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#senior-data-custodians-are-gold-mines-of-business-knowledge">Senior data custodians are gold mines of business knowledge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#volunteers-multiply-value-six-fold">Volunteers multiply value six-fold</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#a-picture-is-worth-a-thousand-badly-drawn-schematics">A picture is worth a thousand badly drawn schematics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#data-entry-is-worth-every-drop-of-sweat-spent-on-forms-procedure-and-documentation">Data entry is worth every drop of sweat spent on forms, procedure and documentation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#requirements-of-the-turtle-group">Requirements of the Turtle group</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#business-process-annual-reporting">Business Process Annual Reporting</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-data-analysis-and-visualisation">IT process data analysis and visualisation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="business_analysts.html#it-process-reporting">IT process reporting</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="business_analysts.html#how-it-s-made-the-process">How it’s made - the process</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#listen">Listen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#look">Look</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#touch">Touch</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#understand">Understand</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#build">Build</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#repeat">Repeat</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business_analysts.html#paradigms">Paradigms</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="business_analysts.html#reproducible-research">Reproducible Research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_import.html">Data import</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_curation.html">Data curation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_access.html">Data access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow_conservationlisting.html">Workflows: Conservation Listing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maintainers.html">Application maintainers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="maintainers.html#migration-to-kubernetes">Migration to Kubernetes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#workload-db">Workload db</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#workloads-prod-uat">Workloads prod/uat</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="maintainers.html#local-development-environment">Local development environment</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#virtualenv">Virtualenv</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#database">Database</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#code">Code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#permissions">Permissions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#useful-commands">Useful commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#production-server-1-supervisord">Production server 1: Supervisord</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#production-server-2-uwsgi">Production server 2: uwsgi</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="maintainers.html#deploying-upgrades-to-production">Deploying upgrades to production</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maintainers.html#developing-with-docker">Developing with Docker</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#setting-up">Setting up</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#deployment">Deployment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#building-and-running-your-app-on-ec2">Building and running your app on EC2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="maintainers.html#security-advisory">Security advisory</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="maintainers.html#deployment">Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maintainers.html#development">Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maintainers.html#release">Release</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="developers.html">Developer documentation</a><ul>
@@ -448,7 +124,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="developers.html#data-model">Data model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="developers.html#module-wastd.observations.models"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wastd.observations.models</span></code> Module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="developers.html#module-taxonomy.models"><code class="xref py py-mod docutils literal notranslate"><span class="pre">taxonomy.models</span></code> Module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="developers.html#module-conservation.models"><code class="xref py py-mod docutils literal notranslate"><span class="pre">conservation.models</span></code> Module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="developers.html#module-occurrence.models"><code class="xref py py-mod docutils literal notranslate"><span class="pre">occurrence.models</span></code> Module</a></li>
@@ -485,61 +160,44 @@
 </li>
 </ul>
 </div>
-</div>
-<div class="section" id="technical-documentation">
-<h1>Technical documentation<a class="headerlink" href="#technical-documentation" title="Permalink to this headline">¶</a></h1>
+</section>
+<section id="technical-documentation">
+<h1>Technical documentation<a class="headerlink" href="#technical-documentation" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
-</div>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="data_collection/data_collection_overview.html" class="btn btn-neutral float-right" title="Data collection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="data_capture.html" class="btn btn-neutral float-right" title="Data capture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2016-2020 DBCA
-
-    </p>
+    <p>&#169; Copyright 2016-2021 DBCA.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

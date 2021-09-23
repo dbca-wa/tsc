@@ -65,16 +65,7 @@ and (if appropriate) TagObservations (flipper / PIT / satellite tags, biopsy
 samples etc.).
 
 .. image:: datamodel.png
-     :alt: WAStD data model
-
-:mod:`wastd.observations.models` Module
----------------------------------------
-
-.. automodule:: wastd.observations.models
-  :members:
-  :undoc-members:
-  :show-inheritance:
-
+     :alt: TSC data model
 
 :mod:`taxonomy.models` Module
 ---------------------------------------

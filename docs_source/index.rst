@@ -11,7 +11,7 @@ TSC - Threatened Species and Communities
 .. image:: https://coveralls.io/repos/github/dbca-wa/tsc/badge.svg?branch=main
      :target: https://coveralls.io/github/dbca-wa/tsc?branch=main
      :alt: Test coverage
-.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+.. image:: https://img.shields.io/badge/License-MIT-green.svg
      :target: https://opensource.org/licenses/MIT
      :alt: MIT License
 
@@ -26,12 +26,13 @@ Threatened Species and Communities of WA: occurrences, conservation status, mana
 .. toctree::
    :maxdepth: 3
 
-   data_collection/data_collection_overview
-   data_collection/data_collection_admin
-   data_collection/data_collection_training
-   data_curators
-   data_consumers
-   business_analysts
+   data_capture
+   data_import
+   data_curation
+   data_access
+   data_analysis
+   workflow_occurrences
+   workflow_conservationlisting
    maintainers
    developers
 
