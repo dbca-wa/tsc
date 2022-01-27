@@ -51,7 +51,7 @@ django-environ==0.4.5
 django-export-download==0.2.3
 django-extensions==3.0.3
 django-extra-fields==2.0.5
-django-filter==2.3.0
+django-filter==2.4.0
 -e git+https://github.com/davedash/django-fixture-magic.git@001194742b3165dc61541bc4532febaba9c1552d#egg=django_fixture_magic
 django-floppyforms==1.9.0
 django-fsm==2.7.0
