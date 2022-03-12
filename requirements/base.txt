@@ -124,7 +124,7 @@ mock==4.0.2
 model-mommy==2.0.0
 -e git+https://github.com/sigma-geosistemas/mommy_spatial_generators.git@2ecace9f8ac142f7f8a2229ac922541f4eba7d80#egg=mommy_spatial_generators
 more-itertools==8.4.0
-numpy==1.19.1
+numpy==1.21.0
 oauthlib==3.1.0
 odfpy==1.4.1
 openapi-codec==1.3.2
